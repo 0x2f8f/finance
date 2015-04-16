@@ -1,0 +1,44 @@
+{% extends '::base.html.twig' %}
+
+  {% block header %}
+<div id="site">
+    <div id="main">
+
+{#        {{ render(controller("FinanceMainBundle:Layout:header", {'request':app.request})) }} #} {# header #}
+        {% endblock header %}
+
+        {% block body %}
+            <div id="content">
+                {% block content %}
+
+                {% endblock content %}
+            </div>
+        {% endblock body %}
+
+        {% block footer %}
+    </div>
+
+{#    {{ render(controller('FinanceMainBundle:Layout:footer', {'request': app.request})) }} #} {# footer #}
+
+</div>
+
+  {% endblock %}
+
+{# Блок перед тегом </head> #}
+{% block head %}
+{#    {{ render(controller("FinanceMainBundle:Layout:metrikaHead", {'request':app.request})) }} #} {# Метрика в хеде #}
+{% endblock %}
+
+{% block layers %}
+    {{ parent() }}
+    <div class="hidden" id="shadow-overlay"></div>
+    <div class="hidden" id="shadow-overlay-menu"></div>
+
+    <div class="layer hidden" id="layer-container"> {# Универсальный слой для любых форм на проекте #}
+        <div class="layer-content" id="layer-container-content">
+            <a href="javascript:void(0)" class="layer-close"><span class="icon-close"></span></a>
+            <div class="layer-content-form"></div>
+        </div>
+    </div>
+
+{% endblock layers %}

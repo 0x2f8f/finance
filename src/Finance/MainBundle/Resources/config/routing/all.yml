@@ -1,0 +1,3 @@
+#Основной роутинг
+artsofte_main:
+    resource: "main.yml"

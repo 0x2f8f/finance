@@ -1,0 +1,5 @@
+#Главная
+homepage:
+  pattern:  /
+  defaults:
+    _controller: FinanceMainBundle:Homepage:index

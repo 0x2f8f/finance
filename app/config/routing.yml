@@ -1,0 +1,2 @@
+main:
+    resource: "@FinanceMainBundle/Resources/config/routing/all.yml"

@@ -1,0 +1,19 @@
+<script type="text/javascript" src="//wurfl.io/wurfl.js"></script> <!-- Device Detection -->
+
+{% javascripts
+'@FinanceMainBundle/Resources/public/js/lib/jquery.min.js'
+
+filter='?yui_js'
+%}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+<!--[if lt IE 8]><script type="text/javascript" src="/bundles/financemain/js/lib/jquery-1.7.2.min.js"></script><![endif]-->
+
+{% javascripts
+    '@FinanceMainBundle/Resources/public/js/lib/jquery-ui.v1.11.1.js'
+
+    filter='?yui_js'
+%}
+<script type="text/javascript" src="{{ asset_url }}"></script>
+{% endjavascripts %}
